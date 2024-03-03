@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('./Fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('./Fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('./Fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('./Fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+html {
+  background: linear-gradient(to top right, #D4145A, #FBB03B);
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
