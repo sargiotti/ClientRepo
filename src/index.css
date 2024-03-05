@@ -51,9 +51,9 @@
   font-weight: 700;
 }
 
-html {
-  background: linear-gradient(to top right, #D4145A, #FBB03B);
-  background-repeat: no-repeat;
+html, body {
+  background:  #FF6961;
+  /* background-repeat: no-repeat; */
   margin: 0;
   height: 100%;
   width: 100%;
