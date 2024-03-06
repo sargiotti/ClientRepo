@@ -13,11 +13,11 @@ function AudioPlayer() {
     setLoading(true);
     try {
       // Fetch the latest video URL from the server
-      const urlResponse = await fetch('http://35.224.219.98:3001/video');
+      const urlResponse = await fetch('https://35.224.219.98:3001/video');
       if (urlResponse.ok) {
         const { url } = await urlResponse.json();
         // Trigger audio processing with the latest video URL
-        const audioResponse = await fetch(`http://35.224.219.98:3001/video/audio?url=${encodeURIComponent(url)}`);
+        const audioResponse = await fetch(`https://35.224.219.98:3001/video/audio?url=${encodeURIComponent(url)}`);
         if (audioResponse.ok) {
           // Append a timestamp to the audio URL to prevent caching
           const newAudioUrl = `https://storage.googleapis.com/marcosargiottitask/audio-buffer.mp3?timestamp=${new Date().getTime()}`;

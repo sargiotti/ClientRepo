@@ -7,7 +7,7 @@ function VideoContainer() {
 
   useEffect(() => {
     const fetchStoredUrl = async () => {
-      const response = await fetch('http://35.224.219.98:3001/video');
+      const response = await fetch('https://35.224.219.98:3001/video');
       if (response.ok) {
         const data = await response.json();
         if (data.url) {

@@ -7,7 +7,7 @@ function OCRResults() {
   const handlePerformOCR = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('http://35.224.219.98:3001/performOCR');
+      const response = await fetch('https://35.224.219.98:3001/performOCR');
       if (response.ok) {
         const data = await response.json();
         setOcrText(data.text);

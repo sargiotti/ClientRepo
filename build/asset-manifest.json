@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ClientRepo/static/css/main.d28af7b1.css",
-    "main.js": "/ClientRepo/static/js/main.e2dbe32c.js",
+    "main.js": "/ClientRepo/static/js/main.9a7b72dc.js",
     "static/js/453.419a5d54.chunk.js": "/ClientRepo/static/js/453.419a5d54.chunk.js",
     "static/media/Montserrat-SemiBold.ttf": "/ClientRepo/static/media/Montserrat-SemiBold.93b37a465fc4ec0d0415.ttf",
     "static/media/Montserrat-Medium.ttf": "/ClientRepo/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
@@ -9,11 +9,11 @@
     "static/media/Roboto-Regular.ttf": "/ClientRepo/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "index.html": "/ClientRepo/index.html",
     "main.d28af7b1.css.map": "/ClientRepo/static/css/main.d28af7b1.css.map",
-    "main.e2dbe32c.js.map": "/ClientRepo/static/js/main.e2dbe32c.js.map",
+    "main.9a7b72dc.js.map": "/ClientRepo/static/js/main.9a7b72dc.js.map",
     "453.419a5d54.chunk.js.map": "/ClientRepo/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d28af7b1.css",
-    "static/js/main.e2dbe32c.js"
+    "static/js/main.9a7b72dc.js"
   ]
 }
