@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { BACKEND_URL } from '../constants';
 function OCRResults() {
   const [ocrText, setOcrText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -7,7 +7,7 @@ function OCRResults() {
   const handlePerformOCR = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('https://35.224.219.98:3001/performOCR');
+      const response = await fetch(BACKEND_URL + '/performOCR');
       if (response.ok) {
         const data = await response.json();
         setOcrText(data.text);

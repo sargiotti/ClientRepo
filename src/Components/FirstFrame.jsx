@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BACKEND_URL } from '../constants';
 
 function FirstFrame() {
   const [frameUrl, setFrameUrl] = useState('');
@@ -6,7 +7,7 @@ function FirstFrame() {
 
   useEffect(() => {
     async function fetchStoredUrl() {
-      const response = await fetch('https://35.224.219.98:3001/video');
+      const response = await fetch(BACKEND_URL + '/video');
       if (response.ok) {
         const data = await response.json();
         setVideoUrl(data.url);
@@ -18,7 +19,7 @@ function FirstFrame() {
 
   const handleFetchFirstFrame = async (url) => {
     try {
-      const response = await fetch(`https://35.224.219.98:3001/video/first-frame?url=${encodeURIComponent(url)}`);
+      const response = await fetch(`${BACKEND_URL}/video/first-frame?url=${encodeURIComponent(url)}`);
       if (response.ok) {
         // Expecting JSON response with imageUrl
         const data = await response.json();

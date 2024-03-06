@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-
+import { BACKEND_URL }   from '../constants';
 function TranslationContainer() {
   const [transcription, setTranscription] = useState('');
   const [translation, setTranslation] = useState('');
   const [speechUrl, setSpeechUrl] = useState(''); // State to hold the speech audio URL
   const [isLoading, setIsLoading] = useState(false);
-
   const handleAudioProcessing = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('https://35.224.219.98:3001/processAudio', {
+      const response = await fetch(BACKEND_URL + '/processAudio', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -34,7 +33,7 @@ function TranslationContainer() {
   const handleConvertTextToSpeech = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('https://35.224.219.98:3001/convertTextToSpeech', {
+      const response = await fetch(BACKEND_URL + '/convertTextToSpeech', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
