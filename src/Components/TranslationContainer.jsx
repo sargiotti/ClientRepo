@@ -9,7 +9,7 @@ function TranslationContainer() {
   const handleAudioProcessing = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('/processAudio', {
+      const response = await fetch('http://35.224.219.98:3001/processAudio', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ function TranslationContainer() {
   const handleConvertTextToSpeech = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('/convertTextToSpeech', {
+      const response = await fetch('http://35.224.219.98:3001/convertTextToSpeech', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

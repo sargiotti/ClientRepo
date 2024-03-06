@@ -7,7 +7,7 @@ function VideoContainer() {
 
   useEffect(() => {
     const fetchStoredUrl = async () => {
-      const response = await fetch('http://localhost:3001/video');
+      const response = await fetch('http://35.224.219.98:3001/video');
       if (response.ok) {
         const data = await response.json();
         if (data.url) {
@@ -21,7 +21,7 @@ function VideoContainer() {
   }, []);
 
   const fetchMetadata = async (videoUrl) => {
-    const response = await fetch(`http://localhost:3001/video/metadata?url=${encodeURIComponent(videoUrl)}`);
+    const response = await fetch(`http://35.224.219.98:3001/video/metadata?url=${encodeURIComponent(videoUrl)}`);
     if (response.ok) {
       const metadata = await response.json();
       setMetadata(metadata);
@@ -34,7 +34,7 @@ function VideoContainer() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:3001/video', {
+      const response = await fetch('http://35.224.219.98:3001/video', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
